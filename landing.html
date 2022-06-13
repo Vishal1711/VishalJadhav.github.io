@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Landing - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>HOME</strong> <span>Vishal Shankar Jadhav</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Projects</a></li>
+							<li><a href="generic.html">Work Experince</a></li>
+							<li><a href="elements.html">Technical Skills</a></li>
+							<li><a href="relevant.html">Relevant Skills</a></li>
+							<li><a href="academics.html">Academics</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="resume.html" class="button primary fit">RESUME</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/project.gif" alt="" />
+							</span>
+							<header class="major">
+								<h1>PROJECTS</h1>
+							</header>
+							<div class="content">
+								<p>Academic and DIY Projects<br />
+								From 2017 to Present.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="generic.html" class="image">
+										<video width="420" height="500"  controls="controls">
+											<source src="images/acc.mp4" type="video/mp4">
+										</video>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Adaptive Cruise Control and Autonomous Lane Keeping</h3>
+											</header>
+											<p>The main objective of this project is to maintain a safe distance from obstacles. With the help of ultrasonic sensors that were mounted on the front and on the sides of the vehicle, the goal was accomplished. Kalman filter was implemented to obtain accurate distance measurements from the sensors. Steering control was carried out by implementing PID. The difference between the sensor readings on the sides were taken as error input to the PID and steering angle inputs to the servo motor was calculated. For maintaining safe distance from the obstacle, the front sensor readings were read and if it is less than a set distance, the throttle inputs were given as zero.</p>
+											<b>Tools and Technology:</b><br />
+											Ultrasonic sensor, Kalman Filter, Arduino, PID Controlller, Electronic Speed Controller and Servo Motor
+											<ul class="actions">
+												<li><a href="https://github.com/Vishal1711/Adaptive-Cruise-Control-and-Autonomous-Lane-keeping-" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/navigation.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Autonomous Navigation on Road Using F1/10th Vehicle</h3>
+											</header>
+											<p><b>1. Autonomous Lane Keeping:</b> <br />
+												Autonomously track the lane clockwise using a camera and a laptop as fast as possible.<br />
+												<b>2. Recognize road signs:</b> <br />
+											    Autonomously recognize a stop sign and as school zone using a second camea. <br />
+											    <b>3. Communications: </b><br />
+											    Send the road sign information from the second laptop to first laptop through UDP protocol Wi-Fi communications.<br />
+												<b>4. Vehicle Controls: </b><br />
+											    Stop the vehicle at the stop sign for 2 seconds and then run at high speed; Reduce the speed by half at the school zone sign. </p>
+
+												<b>Tools and Technologies:</b><br />
+											  MATLAB, Convolotional Neural Network, Transfer Learning, HSV Tranformation, Camera, Controller, Camera Calibration, UDP Protocol
+
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/Vishal1711/8240-Autonomous-Navigation-on-Road-" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="generic.html" class="image">
+										<video width="600" height="340" controls="controls">
+											<source src="images/Gazebo.mp4" type="video/mp4">
+										</video>
+										<img src="images/real.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Autonomous Navigation of Turtlebot3 </h3>
+											</header>
+											<p>Autonomous Navigation of Turtlebot3 in Simulated and Real Environment.<br />
+
+												<b>Task 1: Wall following/Obstacle avoidance </b><br />
+												It successfully follow the wall and avoid the obstacles until it reaches the yellow line. Create a map of this corridor using a SLAM package of choice.<br />
+												
+												<b>Task 2: Line following</b><br />
+												The Turtlebot must successfully follow the yellow line.<br />
+												
+												<b>Task 3: Stop Sign Detection</b> <br />
+												While navigating the yellow line, the the Turtlebot should stop at the stop sign for 3 seconds before continuing. The stop-sign will be detected by Tiny YOLO.<br />
+												
+												<b>Task 4: April Tag tracking</b> <br />
+												For this task you will need to spawn another TB3 in the environment in the empty space past the yellow line and attach an AprilTag to the robot. The Turtlebot3 with the AprilTag will be teleoperated by the user and the preceding TB3 needs to track its motion.</p>
+												
+												<b>Tools and Technologies:</b><br />
+											  Robot Operating System (ROS), Gazebo, TinyYOLO for Object Detection, HSV Tranformation, Camera, LiDAR, OpenCV, SLAM -Gmapping
+
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/Vishal1711/AuE8230_Spring22_Group3/tree/master/auefinals" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://github.com/Vishal1711/Behavioural_cloning" class="image">
+										<video width="560" height="340" controls="controls">
+											<source src="images/End to ENd.mp4" type="video/mp4">
+										</video>
+									
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Behavioural Cloning: End to End Learning for Self-Driving Cars </h3>
+											</header>
+											<p>The goal of this project was to train a end-to-end deep learning model that would let a car drive itself around the track in a driving simulator.<br />
+
+												<b>Task 1: Data Collection and Balancing </b><br />
+												<b>Task 2: Data Augmentation and Pre-processing </b><br />
+												<b>Task 3: Model  </b><br />
+													I started with the model described in Nvidia paper [End to End Learning for Self-Driving Cars] and kept simplifying and optimising it while making sure it performs well on both tracks. <br />
+												<b>Task 4: Tesing the trained model </b><p />
+												
+												
+												<b>Tools and Technologies:</b><br />
+											  Convolutional Neural Network, Udacity Simulator, End to End learning
+
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/Vishal1711/Behavioural_cloning" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://github.com/Vishal1711/AuE893-Deep-Learning-Application-in-Engineering" class="image">
+										<img src="images/RNN.png" alt="" data-position="top center" />
+									
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Anomaly Detection in Manufacturing Data Using RNN </h3>
+											</header>
+											<p><b>•	Build an RNN model to classify text and an LSTM model for anomaly detection (also outlier detection) on the temperature sensor data.</b><br />
+
+												In manufacturing industries, the anomaly detection technique is applied to predict the abnormal activities of machines based on the data read from sensors. In machine learning and data mining, anomaly detection is the task of identifying the rare items, events, or observations that are suspicious and seem different from the majority of the data. In this task, you will predict the possible failure of the system based on the temperature data. And this failure can be detected by check if they follow the trend of the majority of the data.
+
+													The given dataset (ambient_temperature_system_failure.csv) is a part of Numenta Anomaly Benchmark (NAB) dataset, which is a novel benchmark for evaluating machine learning algorithms in anomaly detection.<p />
+												
+												
+												<b>Tools and Technologies:</b><br />
+											  Recurrent Neural Network, Tensorflow, Palmetto Cluster (HPC)
+
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/Vishal1711/AuE893-Deep-Learning-Application-in-Engineering" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://github.com/Vishal1711/AuE893-Deep-Learning-Application-in-Engineering/tree/main/Projects" class="image">
+										
+										<img src="images/Multi-tasking.png" alt="" data-position="top center"  width="100" height="300"><br>
+										<img src="images/result.png" alt="" data-position="top center" />
+									
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3> Multi Task Learning of Deep Neural Networks in Vehicle Perception </h3>
+											</header>
+											<p><b> In this project, we tried implementing a
+												multi-task learning-based neural network for autonomous vehicles and mobile robot applications.
+												The attempt is to implement an architecture that performs multiple tasks simultaneously and uses
+												asymmetric datasets with uneven numbers of annotations per modality. We showcase how our model
+												can perform two tasks on two datasets, all at once, performing depth estimation and segmentation
+												with a single model. This sort of network is essential in autonomous vehicles.<p />
+												
+												
+												<b>Tools and Technologies:</b><br />
+											  Encoder-Decoder Network, Light-Weight Refinenet on Top of MobileNet-v2, PyTorch, Tensorboard, NYUD and KITTI dataset
+
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/Vishal1711/AuE893-Deep-Learning-Application-in-Engineering/tree/main/Projects" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Mini Projects</h2>
+									</header>
+									<p> My other mini projects in deep learning and robotics technologies can be seen on my GitHub profile.  </p>
+									<ul class="actions">
+										<li><a href="https://github.com/Vishal1711" class="button next">Mini Projects</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form method="post" action="https://formsubmit.co/vjadhav@clemson.edu">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="#">vjadhav@clemson.edu<br />
+									<a href="#">jadhavvishal669@gmail.com</a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+1 (864) 553-4965 </span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span>10302, Meads Drive<br />
+									Mauldin, South Carolina - 29662<br />
+									United States of America</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/vishal-jadhav-/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://twitter.com/home" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/Vishal1711" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/_jadhav_vishal/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
